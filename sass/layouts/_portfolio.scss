@@ -63,7 +63,9 @@
   }
   
   .box-portfolio-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,6 +82,7 @@
     }
   }
   .box-title {
+    flex-grow: 1;
     padding: 20px 24px;
   
     border-bottom: 1px solid #eeeeee;
