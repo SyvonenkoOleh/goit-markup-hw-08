@@ -43,6 +43,10 @@ body {
   background: #ffffff;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .title {
   margin-bottom: 30px;
   font-weight: 700;

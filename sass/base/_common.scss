@@ -5,6 +5,10 @@ body {
   font-size: 14px;
   background: #ffffff;
 }
+body.modal-open {
+  overflow: hidden;
+}
+
 .title {
   margin-bottom: 30px;
   
