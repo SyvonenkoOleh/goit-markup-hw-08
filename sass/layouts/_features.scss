@@ -1,0 +1,120 @@
+  .features {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1428;
+      text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__item {
+      max-width: 450px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
+      @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__text {
+      line-height: 1.7142;
+      color: var(--primary-text-color);
+    }
+    &__icon {
+      display: flex;
+      margin-bottom: 30px;
+      height: 120px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+//   .advantages {
+//     &__block:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+
+//     &__name {
+//         display: none;
+//     }
+
+//     &__title {
+//         color: $title-text-color;
+//         font-weight: bold;
+//         line-height: 1.14;
+//         text-transform: uppercase;
+//         margin-bottom: 10px;
+//     }
+
+//     &__description {
+//         line-height: 1.71;
+//     }
+
+//     &__icons {
+//         background-color: $background-ourteam-button;
+//         border-radius: 4px;
+//         margin-bottom: 30px;
+//         text-align: center;
+//         padding: 25px 0 25px 0;
+//     }
+// }
+
+
+
+// @media screen and (min-width: 768px) {
+//     .advantages__title {
+//         text-align: left;
+//     }
+
+//     .advantages__all-groups {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+
+//     .advantages__block {
+//         flex-basis: calc((100% - 30px) / 2);
+//     }
+
+//     .advantages__block:nth-child(2n + 1) {
+//         margin-right: 30px;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .advantages__all-groups {
+//         display: flex;
+//         flex-wrap: nowrap;
+//     }
+
+//     .advantages__icons {
+
+//         @include centeredFlex();
+//         padding: 25px 100px;
+//     }
+
+//     .advantages__description {
+//         width: 270px;
+//         height: 75px;
+//     }
+
+//     .advantages__block:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
